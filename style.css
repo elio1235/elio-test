@@ -108,7 +108,7 @@ body {
 .market-text {
   margin-top: 1.2rem;
   font-size: 1.05rem;
-  font-weight: 400;
+   font-weight: 600;
   color: #ffffff;
   background: none;
   padding: 0;
@@ -138,25 +138,7 @@ body {
   }
 }
 
-/* Button
-.market-btn {
-  display: inline-block;
-  margin-top: 0.8rem;
-  background-color: #c2a77b;
-  color: #000000;
-  padding: 0.6rem 1.4rem;
-  border-radius: 30px;
-  font-size: 0.9rem;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-}
 
-.market-btn:hover {
-  background-color: #a68d65;
-  transform: scale(1.05);
-} */
 .market-btn {
   display: inline-block;
   margin-top: 1rem;
