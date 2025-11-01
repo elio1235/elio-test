@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,97 +6,110 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Body Background */
+/* Body */
 body {
-  background-color: #b8aea4; /* beige-gray */
+  background-color: #b8aea4;
   color: #ffffff;
   text-align: center;
+  height: 100vh;           /* full screen */
+  overflow: hidden;        /* no scrolling */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.car-placeholder img {
-  width: 80%;      /* make it smaller (adjust 70% → 60%, 50%, etc.) */
-  max-width: 300px; /* don’t let it get too large */
-  height: auto;     /* keeps the image proportions */
-  display: block;
-  margin: 0 auto;   /* centers it */
-}
-/* Header */
+
+/* Header (fixed at top) */
 .hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #000000;
-  padding: 2.5rem 1rem;
+  padding: 1rem 0.5rem;
+  z-index: 10;
 }
 
 .hero .small-text {
   color: #b8aea4;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
-  margin-bottom: 0.5rem;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 1px;
+  margin-top: 0.3rem;
 }
 
-/* Main Section */
+/* Main */
 .content {
-  padding: 3rem 1rem 5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;    /* space for fixed header */
+  padding-bottom: 4rem; /* space for fixed footer */
 }
 
 .expo-info h2 {
-  font-size: 1.2rem;
-  color: #ffffff;
+  font-size: 1rem;
   letter-spacing: 1px;
+  color: #fff;
 }
 
 .expo-info span {
+  display: block;
   font-weight: 700;
-  display: inline-block;
-  margin-top: 0.3rem;
-  color: #ffffff;
 }
 
 .car-placeholder {
-  margin: 2rem auto 0;
+  margin: 1.5rem auto 0;
   width: 80%;
-  max-width: 600px;
-  height: 300px;
-  background: linear-gradient(to bottom right, #dcdcdc, #ffffff);
+  max-width: 260px;
+  background: none;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Footer */
+.car-placeholder img {
+  width: 75%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer (fixed at bottom) */
 .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #000000;
+  color: #c2a77b;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5rem 1rem;
-  flex-wrap: wrap;
+  padding: 0.8rem 0.5rem;
 }
 
 .footer-item {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  margin: 0.5rem;
+  gap: 0.5rem;
 }
 
 .footer-accent {
   color: #c2a77b;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  font-size: 0.8rem;
 }
 
 .footer-white {
   color: #ffffff;
+  font-size: 0.9rem;
   font-weight: 600;
-  font-size: 1rem;
 }
 
 .icon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #c2a77b;
 }
