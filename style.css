@@ -105,24 +105,40 @@ body {
   margin: 0 auto;
 }
 
-/* Paragraph */
 .market-text {
   margin-top: 1.2rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #000000;
-  background-color: #ffffffb3;
-  padding: 0.7rem 1rem;
-  border-radius: 10px;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #ffffff;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  line-height: 1.7;
   width: 85%;
-  max-width: 320px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
+  font-family: "Inter", "Poppins", sans-serif;
+  text-align: center;
+  opacity: 0.95;
+}
+.market-text {
+  animation: fadeInUp 0.8s ease-in-out;
 }
 
-/* Button */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button
 .market-btn {
   display: inline-block;
   margin-top: 0.8rem;
@@ -140,8 +156,27 @@ body {
 .market-btn:hover {
   background-color: #a68d65;
   transform: scale(1.05);
+} */
+.market-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #d6bb8a, #c2a77b);
+  color: #000000;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  font-family: "Inter", "Poppins", sans-serif;
 }
 
+.market-btn:active {
+  transform: scale(0.97);
+}
 /* Footer */
 .footer {
   position: fixed;
