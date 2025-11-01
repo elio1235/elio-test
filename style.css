@@ -11,14 +11,14 @@ body {
   background-color: #b8aea4;
   color: #ffffff;
   text-align: center;
-  height: 100vh;           /* full screen */
-  overflow: hidden;        /* no scrolling */
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* Header (fixed at top) */
+/* Header */
 .hero {
   position: fixed;
   top: 0;
@@ -47,38 +47,102 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 4rem;    /* space for fixed header */
-  padding-bottom: 4rem; /* space for fixed footer */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
 }
 
-.expo-info h2 {
+.expo-info {
+  width: 100%;
+  position: relative;
+}
+
+/* Title aligned top-right */
+.expo-title {
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+  text-align: center;
+}
+
+.expo-title h2 {
   font-size: 1rem;
+  color: #ffffff;
   letter-spacing: 1px;
-  color: #fff;
+  line-height: 1.2;
 }
 
-.expo-info span {
-  display: block;
+.expo-title span {
   font-weight: 700;
+  display: block;
+  color: #ffffff;
 }
 
+/* Decorative line under title */
+.title-line {
+  width: 60px;
+  height: 2px;
+  background-color: #ffffff; /* same color as text */
+  margin-top: 0.3rem;
+  border-radius: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Car */
 .car-placeholder {
-  margin: 1.5rem auto 0;
-  width: 80%;
-  max-width: 260px;
-  background: none;
+  margin: 2.5rem auto 0;
+  width: 100%;
+  max-width: 320px;
   border-radius: 15px;
 }
 
 .car-placeholder img {
-  width: 75%;
-  max-width: 220px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* Footer (fixed at bottom) */
+/* Paragraph */
+.market-text {
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffffb3;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  line-height: 1.6;
+  width: 85%;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.3px;
+}
+
+/* Button */
+.market-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background-color: #c2a77b;
+  color: #000000;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.market-btn:hover {
+  background-color: #a68d65;
+  transform: scale(1.05);
+}
+
+/* Footer */
 .footer {
   position: fixed;
   bottom: 0;
